@@ -4,6 +4,8 @@ https://github.com/trojan-gfw/trojan/releases
 
 https://blog.csdn.net/oLiuKong/article/details/52077754
 
+https://gist.github.com/zapstar/4b51d7cfa74c7e709fcdaace19233443
+
 
 ```
 tar -Jxf 
