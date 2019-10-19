@@ -10,6 +10,13 @@ tar -Jxf
 nohup ./trojan >/dev/null 2>&1 &
 
 
+git clone https://github.com/letsencrypt/letsencrypt
+cd letsencrypt
+./certbot-auto --help all
+./letsencrypt-auto certonly --standalone --email legend_ko@msn.com -d legend-ko.xyz
+
+/etc/letsencrypt/live/legend-ko.xyz/fullchain.pem
+/etc/letsencrypt/live/legend-ko.xyz/privkey.pem
 
 yum install openssl -y
 
