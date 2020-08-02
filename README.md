@@ -62,6 +62,7 @@ hijack = Dns-Out
 
 [DnsServer]
 localhost
-8.8.8.8
+8.8.8.8, 53, Remote
+8.8.4.4
 
 ```
