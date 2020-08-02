@@ -41,3 +41,27 @@ openssl rsa -in server.key -out server_nopwd.key
 openssl x509 -req -days 365 -in server.csr -signkey server_nopwd.key -out server.crt
 
 ```
+
+
+
+```
+[Endpoint]
+Socks-Out, builtin, socks, address=127.0.0.1, port=1080
+Direct, builtin, freedom, domainStrategy=UseIP
+Dns-Out, builtin, dns
+
+[RoutingRule]
+PROCESS-NAME, trojan.exe, Direct
+DOMAIN-KEYWORD, geosite:cn, Direct
+GEOIP, cn, Direct
+GEOIP, private, Direct
+FINAL, Proxy-1
+
+[Dns]
+hijack = Dns-Out
+
+[DnsServer]
+localhost
+8.8.8.8
+
+```
