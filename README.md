@@ -40,7 +40,12 @@ openssl x509 -req -CA ca.crt -CAkey ca.key -CAcreateserial -in client.csr -out c
 openssl rsa -in server.key -out server_nopwd.key
 openssl x509 -req -days 365 -in server.csr -signkey server_nopwd.key -out server.crt
 
+
+server.crt
+server.key
 ```
+
+
 
 
 
