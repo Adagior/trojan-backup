@@ -6,7 +6,7 @@ https://blog.csdn.net/oLiuKong/article/details/52077754
 
 https://gist.github.com/zapstar/4b51d7cfa74c7e709fcdaace19233443
 
-
+zerossl.com
 ```
 tar -Jxf 
 nohup ./trojan >/dev/null 2>&1 &
