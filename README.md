@@ -71,3 +71,21 @@ localhost
 8.8.4.4
 
 ```
+```
+yum install fail2ban
+
+sudo systemctl enable fail2ban
+sudo systemctl start fail2ban
+
+
+
+---To set up filtered services, you must create a corresponding "jail" file under the /etc/fail2ban/jail.d directory. For SSHD, create a new file named sshd.local and enter service filtering instructions into it.---
+
+[sshd]
+enabled = true
+port = ssh
+action = iptables-multiport
+logpath = /var/log/secure
+maxretry = 3
+bantime = 600
+```
