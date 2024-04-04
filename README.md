@@ -72,6 +72,7 @@ localhost
 
 ```
 ```
+yum install epel-release
 yum install fail2ban
 
 sudo systemctl enable fail2ban
