@@ -90,3 +90,10 @@ logpath = /var/log/secure
 maxretry = 3
 bantime = 600
 ```
+
+
+
+singbox
+```
+bash <(curl -fsSL https://github.com/deathline94/sing-REALITY-Box/raw/main/sing-REALITY-box.sh)
+```
