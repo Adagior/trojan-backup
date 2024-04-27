@@ -1,5 +1,12 @@
 # trojan-backup
 
+singbox
+```
+bash <(wget -qO- https://raw.githubusercontent.com/fscarmen/sing-box/main/sing-box.sh)
+
+sb
+```
+
 https://github.com/trojan-gfw/trojan/releases
 
 https://blog.csdn.net/oLiuKong/article/details/52077754
