@@ -2,6 +2,8 @@
 
 singbox
 ```
+bash <(curl i.hiddify.com/release)
+
 bash <(wget -qO- https://raw.githubusercontent.com/fscarmen/sing-box/main/sing-box.sh)
 
 sb
