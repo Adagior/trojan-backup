@@ -4,6 +4,9 @@ singbox
 ```
 bash <(curl i.hiddify.com/release)
 
+bash <(curl https://i.hiddify.com/docker/latest)
+
+
 bash <(wget -qO- https://raw.githubusercontent.com/fscarmen/sing-box/main/sing-box.sh)
 
 sb
