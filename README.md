@@ -2,6 +2,21 @@
 
 singbox
 ```
+https://github.com/SagerNet/sing-box/releases
+
+
+tar -Jxf 
+nohup ./sing-box run -c config.json >/dev/null 2>&1 &
+
+
+
+https://github.com/chika0801/sing-box-examples
+
+```
+
+
+
+```
 bash <(curl i.hiddify.com/release)
 
 bash <(curl https://i.hiddify.com/docker/latest)
