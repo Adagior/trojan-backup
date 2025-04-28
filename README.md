@@ -5,7 +5,7 @@ singbox
 https://github.com/SagerNet/sing-box/releases
 
 
-tar -Jxf 
+tar -czf
 nohup ./sing-box run -c config.json >/dev/null 2>&1 &
 
 
