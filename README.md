@@ -62,8 +62,8 @@ client
             "password": "Adagio",
             "tls": {
                 "enabled": true,
-                "insecure": true
                 "server_name": "",
+                "insecure": true,
                 "alpn": [
                     "h3"
                 ]
