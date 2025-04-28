@@ -12,6 +12,65 @@ nohup ./sing-box run -c config.json >/dev/null 2>&1 &
 
 https://github.com/chika0801/sing-box-examples
 
+server
+{
+    "inbounds": [
+        {
+            "type": "hysteria2",
+            "listen": "::",
+            "listen_port": 443,
+            "up_mbps": 10000,
+            "down_mbps": 10000,
+            "users": [
+                {
+                    "password": "Adagio"
+                }
+            ],
+            "tls": {
+                "enabled": true,
+                "alpn": [
+                    "h3"
+                ],
+                "certificate_path": "/root/online.crt",
+                "key_path": "/root/online.key"
+            }
+        }
+    ],
+    "outbounds": [
+        {
+            "type": "direct"
+        }
+    ]
+}
+
+client
+{
+    "inbounds": [
+        {
+            "type": "mixed",
+            "listen": "::",
+            "listen_port": 1080
+        }
+    ],
+    "outbounds": [
+        {
+            "type": "hysteria2",
+            "server": "??????",
+            "server_port": 443,
+            "up_mbps": 10000,
+            "down_mbps": 10000,
+            "password": "Adagio",
+            "tls": {
+                "enabled": true,
+                "server_name": "",
+                "alpn": [
+                    "h3"
+                ]
+            }
+        }
+    ]
+}
+
 ```
 
 
