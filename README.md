@@ -4,6 +4,10 @@ singbox
 ```
 https://github.com/SagerNet/sing-box/releases
 
+echo 'net.core.default_qdisc=fq' | sudo tee -a /etc/sysctl.conf
+echo 'net.ipv4.tcp_congestion_control=bbr' | sudo tee -a /etc/sysctl.conf
+sudo sysctl -p
+
 
 tar -xvf
 nohup ./sing-box run -c config.json >/dev/null 2>&1 &
